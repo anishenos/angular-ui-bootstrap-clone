@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>angular bootstrap</title>
+  <link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.css">
+  <script src="lib/angular/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+  <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="main.js"></script>
+  <script src="directives.js"></script>
+  <script src="node_modules/angular-breadcrumb/dist/angular-breadcrumb.min.js"></script>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+<div class="well">
+  <button class="btn btn-sm btn-info" ><a href="#/home">Home</a></button>
+  <button class="btn btn-sm btn-info" ><a href="#/first-page">Go to page 1</a></button> 
+  <button class="btn btn-sm btn-info" ><a href="#/ui-bootstrap">Go to bootstrap</a></button>
+</div>
+
+<div ncy-breadcrumb></div>
+
+<div ui-view>
+
+</div>
+
+</body>
+</html>

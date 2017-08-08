@@ -1,0 +1,10 @@
+<span uib-dropdown on-toggle="toggled(open)">
+      <a href id="simple-dropdown" uib-dropdown-toggle>
+        {{name}}
+      </a>
+      <ul uib-dropdown-menu aria-labelledby="simple-dropdown">
+        <li ng-repeat="choice in lists">
+          <a ng-click="selectedItem(choice)" href>{{choice}}</a>
+        </li>
+      </ul>
+</span>
